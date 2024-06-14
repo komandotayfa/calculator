@@ -1,10 +1,10 @@
-def conv(expression):
+def conv(giris):
     try:
-        result = eval(expression)
-        return str(result)
+        sonuc = eval(giris)
+        return str(sonuc)
     except Exception as e:
         return "Error"
 while True:
-    expression = str(input("input: "))
-    sonuc = conv(expression)
+    giris = str(input("input: "))
+    sonuc = conv(giris)
     print(sonuc)
