@@ -4,7 +4,10 @@ def conv(giris):
         return str(sonuc)
     except Exception as e:
         return "Error"
+
+def sonuc(giris):
+    return(conv(giris))
+
 while True:
     giris = str(input("input: "))
-    sonuc = conv(giris)
-    print(sonuc)
+    print(sonuc(giris))
